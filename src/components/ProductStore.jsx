@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import ProductData from "../productDetails.json";
+// import ProductData from "../productDetails.json";
 import ProductCard from "./ProductCard";
 
 
@@ -20,12 +20,12 @@ const ProductStore = () => {
 
   useEffect(() => {
     fetchDetails();
-    console.table(details);
+
   }, []);
 
   return (
     <>
-      {ProductData.map((item) => (
+      {details?.map((item) => (
         <Col md={4}>
           <ProductCard CardImage={item.image} CardTitle={item.title} CardPrice={item.price} CardText={item.description} />
         </Col>

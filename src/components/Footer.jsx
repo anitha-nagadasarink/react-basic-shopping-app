@@ -4,12 +4,12 @@ import { Container } from "reactstrap";
 
 const Footer = () => {
   return (
-    <Footer className="P-5 bg-dark">
+    <footer className="p-2 bg-dark">
       <Container className="text-center">
-        <p>Made with ❤ by Anitha</p>
+        <p className="text-white mt-3">Built with React</p>
       </Container>
 
-    </Footer>
+    </footer>
   )
 };
 
